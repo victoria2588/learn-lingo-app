@@ -1,0 +1,233 @@
+.advan {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advan-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.advan-potential {
+  height: auto;
+  width: 100%;
+  background-color: #f8f8f8;
+  margin: 30px 0 24px;
+  border-radius: 30px;
+  padding: 64px;
+}
+.advan-title {
+  margin: 34px 0 32px 0;
+  color: var(--color-black);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+}
+
+em {
+  color: var(--color-black);
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  background-color: var(--color-light-yellow);
+}
+
+.advan-text {
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: -0.32px;
+}
+
+.advan-button {
+  width: 267px;
+  max-width: 100%;
+  height: 60px;
+  background-color: var(--color-yellow);
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.advan-center {
+  color: var(--color-black);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.advan_pictures {
+  height: auto;
+  width: 100%;
+  border-radius: 30px;
+  margin: 25px 0 24px;
+  background-color: var(--color-light-yellow);
+}
+
+.advan__pictures-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  max-height: 530px;
+}
+
+.advan_image-container {
+  text-align: center;
+}
+
+.advan_tutor {
+  top: 65px;
+  position: relative;
+  max-width: 339px;
+}
+.advan_comp {
+  width: 100%;
+  max-width: 359.72px;
+  background: linear-gradient(180deg, #eeb055 0%, #d08f38 100%);
+  height: 248px;
+  border-radius: 8px 8px 0 0;
+  display: inline-block;
+  position: relative;
+}
+.advan_mac {
+  z-index: 3;
+  top: 30%;
+  width: 46px;
+  height: 56px;
+  position: relative;
+}
+
+/* Стилі для секції statistics */
+.statistics {
+  /* margin: 40px auto;  */
+  padding: 40px 20px;
+  border: 2px dashed var(--color-light-yellow);
+  border-radius: 30px;
+}
+
+.statistics .container {
+  /* max-width: 1067px; */
+  width: 100%;
+}
+
+.statistics_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.statistics_tutors {
+  text-align: center;
+}
+
+.number_chifr {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.56px;
+}
+
+.number {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+}
+
+/* Медіа-запити */
+@media screen and (max-width: 767px) {
+  .advan-inner,
+  .statistics_wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .advan-potential,
+  .advan_pictures,
+  .statistics {
+    max-width: 100%;
+  }
+
+  .advan-potential {
+    margin: 20px 0;
+    padding: 20px;
+  }
+
+  .advan-content,
+  .statistics_wrapper {
+    margin: 0 20px;
+  }
+
+  .advan-title,
+  em {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .advan-text {
+    width: auto;
+  }
+
+  .advan-button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .statistics_tutors {
+    max-width: 100%;
+  }
+
+  .advan_comp,
+  .advan_comp {
+    top: 0;
+  }
+
+  .statistics_tutors {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .number_chifr,
+  .number {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .advan-inner,
+  .statistics_wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .advan-potential,
+  .advan_pictures,
+  .statistics {
+    max-width: 100%;
+  }
+
+  .advan-potential {
+    margin: 20px 0;
+  }
+
+  .advan-button,
+  .statistics_tutors {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,64 @@
+<!-- POPUP REGISTRATION -->
+<div class="popup-container js-popup-container">
+  <div class="popup-box">
+    <button class="modal-close-btn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="none"
+      >
+        <path
+          stroke="#121417"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.5"
+          d="M24 8 8 24M8 8l16 16"
+        />
+      </svg>
+    </button>
+
+    <h2 class="popup-title">Registration</h2>
+    <p class="popup-text">
+      Thank you for your interest in our platform! In order to register, we need
+      some information. Please provide us with the following information
+    </p>
+
+    <form class="popup-reg-form">
+      <div class="popup-reg-group">
+        <input
+          type="text"
+          class="form-input"
+          placeholder="Full Name"
+          name="name"
+          required
+          pattern="[a-zA-Zа-яА-Я]+"
+          maxlength="20"
+        />
+      </div>
+
+      <div class="popup-reg-group">
+        <input
+          type="email"
+          id="email"
+          class="form-input"
+          placeholder="Email"
+          name="email"
+          required
+        />
+      </div>
+
+      <div class="popup-reg-group">
+        <input
+          type="tel"
+          class="form-input"
+          placeholder="Password"
+          name="password"
+        />
+      </div>
+      <button type="submit" class="popup-reg-btn">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+<!-- /POPUP REGISTRATION -->

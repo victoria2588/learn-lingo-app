@@ -1,0 +1,120 @@
+.header {
+  padding: 20px 0;
+  max-width: 82%; /* ±1440px for diff wind s */
+  margin: 0 auto;
+}
+.header-row {
+  display: flex;
+  align-items: center;
+}
+.header-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  flex-grow: 2.051;
+}
+.header-logo a {
+  text-decoration: none;
+}
+.header-logo-icon {
+  height: 28px;
+  width: 28px;
+}
+.text-center {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+.header-logo a:hover {
+  color: #0b69f5;
+}
+.header-nav {
+  color: var(--color-blank);
+
+  flex-grow: 1.592;
+}
+.header-nav ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.header-nav a {
+  transition: color 0.2s ease;
+}
+.header-nav a:hover {
+  color: #0b69f5;
+}
+.header-login-user {
+  margin-right: 16px;
+}
+/* .header-login > * + * {
+	margin-left: 8px;
+} */
+.header-login-icon {
+  height: 20px;
+  width: 20px;
+}
+.header-login {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.header-login-button {
+  margin-left: auto;
+  /* Розташовує кнопку вправо */
+}
+.favorites {
+  display: none;
+}
+.favorites.show {
+  display: block;
+}
+.button,
+a.button {
+  height: 48px;
+  padding-left: 39px;
+  padding-right: 39px;
+}
+.header-login a {
+  color: var(--color-blank);
+  transition: color 0.2s ease;
+}
+.header-login a:hover {
+  color: #0b69f5;
+}
+.button,
+a.button {
+  height: 48px;
+  width: 166px;
+  padding-left: 39px;
+  padding-right: 39px;
+  background-color: var(--color-black);
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  transition: opacity 0.2s ease;
+}
+@media screen and (max-width: 767px) {
+  .header-nav ul {
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .header-logo {
+    flex-basis: 50%;
+  }
+  .header-nav {
+    flex-basis: 50%;
+    margin-top: 0;
+  }
+}

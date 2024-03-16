@@ -1,0 +1,113 @@
+<!-- MODAL-book-lesson	-->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-close-btn" data-modal-close>
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+      >
+        <title>x</title>
+        <path
+          fill="none"
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          stroke-miterlimit="4"
+          stroke-width="2.5"
+          stroke="#000"
+          d="M24 8l-16 16M8 8l16 16"
+        ></path>
+      </svg>
+    </button>
+    <h2 class="modal-title js-book-btn">Book trial lesson</h2>
+    <p class="modal-text">
+      Our experienced tutor will assess your current language level, discuss
+      your learning goals, and tailor the lesson to your specific needs.
+    </p>
+
+    <div class="modal-book">
+      <div class="modal-lesson-wrapper">
+        <div class="modal-book-wrapper">
+          <div class="modal-book-avatar">
+            <img src="../../assets/img/pictures/1.jpg" alt="photo of tutor" />
+          </div>
+          <div class="modal-book-data">
+            <p class="modal-book-text">Your teacher</p>
+            <div class="">
+              <h4 class="modal-book-name">Jane Smith</h4>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h3 class="modal-book-desc">
+            What is your main reason for learning English?
+          </h3>
+        </div>
+
+        <div class="modal-form-radio-btn">
+          <label class="radio-btn">
+            <input type="radio" name="reason" value="career" />
+            Career and business
+          </label>
+          <label>
+            <input type="radio" name="reason" value="kids" checked />
+            Lesson for kids
+          </label>
+          <label>
+            <input type="radio" name="reason" value="abroad" />
+            Living abroad
+          </label>
+          <label>
+            <input type="radio" name="reason" value="exams" />
+            Exams and coursework
+          </label>
+          <label>
+            <input type="radio" name="reason" value="culture" />
+            Culture, travel or hobby
+          </label>
+        </div>
+      </div>
+
+      <form class="modal-form form" id="js-bookForm">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-input"
+            placeholder="Full Name"
+            name="fullname"
+            required
+            pattern="[a-zA-Zа-яА-Я]+"
+            maxlength="20"
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="email"
+            id="email"
+            class="form-input"
+            placeholder="Email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="tel"
+            class="form-input"
+            placeholder="Phone number"
+            name="phone"
+          />
+        </div>
+      </form>
+
+      <div>
+        <button type="submit" class="form-btn">Book</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /MODAL-book-lesson -->

@@ -1,0 +1,9 @@
+body {
+  background-color: var(--color-light-grey);
+}
+
+.filters-container {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 20px;
+}

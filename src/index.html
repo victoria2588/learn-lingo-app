@@ -4,21 +4,95 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Learn lingo</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <load ="partials/header.html" />
+    <load ="partials/modal/registration-popup.html" />
+    <load ="partials/modal/login-popup.html" />
+    <main>
+      <div class="container">
+        <section class="advan">
+          <div class="advan-inner">
+            <div class="advan-potential">
+              <div class="advan-content">
+                <h1 class="advan-title">
+                  Unlock your potential with the best <em>language</em> tutors
+                </h1>
+                <p class="advan-text">
+                  Embark on an Exciting Language Journey with Expert Language
+                  Tutors: Elevate your language proficiency to new heights by
+                  connecting with highly qualified and experienced tutors.
+                </p>
+                <div class="advan-button">
+                  <!-- <button type="button">Get started</button> -->
+                  <a href="./teachers.html" class="advan-center">Get started</a>
+                </div>
+              </div>
+            </div>
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+            <div class="advan_pictures">
+              <div class="advan__pictures-wrapper">
+                <img
+                  class="advan_tutor"
+                  src="./assets/img/pictures/Tutor.png"
+                  alt="photo of tutor"
+                  width="339"
+                  height="339"
+                />
+                <div class="advan_comp">
+                  <img
+                    class="advan_mac"
+                    src="./assets/img/-mac.svg"
+                    alt="icon-mac"
+                    width="46"
+                    height="56"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="statistics">
+          <div class="container">
+            <div class="statistics_wrapper">
+              <div class="statistics_tutors">
+                <h3 class="number_chifr">32,000 +</h3>
+                <p class="number">Experienced tutors</p>
+              </div>
+
+              <div class="statistics_tutors">
+                <h3 class="number_chifr">300,000 +</h3>
+                <p class="number">5-star tutor reviews</p>
+              </div>
+
+              <div class="statistics_tutors">
+                <h3 class="number_chifr">120 +</h3>
+                <p class="number">Subjects taught</p>
+              </div>
+
+              <div class="statistics_tutors">
+                <h3 class="number_chifr">200 +</h3>
+                <p class="number">Tutor nationalities</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
 
     <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/home.js"></script>
   </body>
 </html>

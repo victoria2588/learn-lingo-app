@@ -1,0 +1,51 @@
+:root {
+  --color-black: #121417;
+  --color-yellow: #f4c550;
+  --color-light-yellow: #fbe9ba;
+  --color-green: #9fbaae;
+  --color-light-green: #cbded3;
+  --color-blue: #9fb7ce;
+  --color-light-blue: #bfd6ea;
+  --color-pink: #e0a39a;
+  --color-light-pink: #f2c0bd;
+  --color-beige: #f0aa8d;
+  --color-light-beige: #f4c8ba;
+  --color-grey: #8a8a89;
+  --color-light-grey: #f8f8f8;
+  --color-white: #ffffff;
+  --color-green: #38cd3e;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.none {
+  display: none !important;
+}
+
+.visually-hidden {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  display: block;
+  margin-left: -10000px;
+  background: transparent;
+  font-size: 0;
+}
+
+/* grid */
+.container {
+  padding: 0 64px;
+  /* height: 790px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

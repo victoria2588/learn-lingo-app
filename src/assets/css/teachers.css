@@ -1,0 +1,290 @@
+body {
+  background-color: var(--color-light-grey);
+}
+
+.filters-container {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.filters-row {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.filters-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.filters-lang {
+  width: 221px;
+  height: 48px;
+}
+
+.filters-level {
+  width: 198px;
+  height: 48px;
+}
+
+.filters-price {
+  width: 124px;
+  height: 48px;
+}
+
+.studies {
+  -moz-appearance: none;
+  -webkit-apprarance: none;
+  appearance: none;
+
+  width: 100%;
+  font-size: 18px;
+
+  border-radius: 12px;
+  background: #fff;
+  padding: 16px 148px 16px 18px;
+  outline: none;
+  cursor: pointer;
+}
+
+.select-wrapper {
+  position: relative;
+  font-size: 18px;
+}
+
+.select-wrapper::before {
+  content: '';
+  position: absolute;
+  right: 13px;
+  top: 14px;
+  width: 20px;
+  height: 20px;
+
+  /* Знімаю клік з квадратику*/
+  pointer-events: none;
+  background: url(../img/chevron-down.svg);
+}
+
+.select::-ms-expand {
+  display: none;
+}
+
+.filters-lang input {
+  display: flex;
+  height: 48px;
+  padding: 16px 148px 16px 18px;
+  /* justify-content: center;
+    align-items: center;
+    gap: 133px; */
+  border-radius: 14px;
+  background: #fff;
+}
+
+.filters-list select {
+  /* display: flex;
+    width: 221px; */
+  padding: 14px 81px 14px 18px;
+  /* flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; */
+  /* gap: 8px; */
+  border-radius: 12px;
+  background: var(--color-white);
+}
+
+.filters-price select {
+  padding: 14px 18px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.filters-text {
+  color: var(--color-grey);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.filters-level {
+  width: 198px;
+  height: 48px;
+}
+
+/* SECTION TUTOR */
+/* .tutors-section {
+}
+
+.container {
+} */
+
+.tutors {
+  display: flex;
+  width: 1184px;
+  padding: 24px;
+  margin-top: 32px;
+  align-items: flex-start;
+  gap: 48px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.tutors-box {
+  display: inline-block;
+  padding: 12px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 3px solid #fbe9ba;
+  background: #fff;
+}
+
+/* .tutor-avatar {
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: url(../img/pictures/Jane.jpg), lightgray 50% / cover no-repeat;
+} */
+
+.tutor-avatar {
+  width: 96px;
+  height: 96px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.tutor-list {
+  width: 968px;
+  height: 280px;
+}
+
+/* .tutor-card {
+} */
+
+.tutor-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  margin-bottom: 32px;
+}
+
+.tutor-lang-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 122px;
+  height: 56px;
+}
+
+.tutor-text {
+  color: #8a8a89;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-right: 4px;
+}
+
+.tutor-name {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.tutor-info {
+  /* display: inline-block;
+    width: 697px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+    gap: 64px; */
+  margin-left: 149px;
+}
+
+.tutor-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.turor-online {
+  width: 132px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tutor-details {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  /* 150% */
+}
+
+.tutor-det-lesson {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.tutor-det {
+  width: 145px;
+  height: 24px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.tutor-star {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.price {
+  color: var(--color-green);
+}
+
+/* .tutor-rating {
+}
+
+.heart {
+} */
+
+.tutor-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.tutor-row {
+  display: flex;
+  flex-direction: row;
+  width: 174px;
+  height: 24px;
+}
+
+.tutor-decor {
+  display: inline-block;
+  text-decoration-line: underline;
+}
+
+.tutor-lesson {
+  display: flex;
+  flex-direction: row;
+}
+
+.tutor-conditions {
+  display: flex;
+  flex-direction: row;
+}
