@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/learn-lingo-app/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/learn-lingo-app/assets/teachers-821490db.js">
+    <link rel="modulepreload" crossorigin href="/learn-lingo-app/assets/read_more-cba04a21.js">
+    <link rel="stylesheet" href="/learn-lingo-app/assets/teachers-1e6bfa4b.css">
+    <link rel="stylesheet" href="/learn-lingo-app/assets/read_more-87495c79.css">
+    <link rel="stylesheet" href="/learn-lingo-app/assets/teachers-2d1b546f.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header-row">
+      <div class="header-logo">
+        <a href="./index.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="none"
+          >
+            <g clip-path="url(#a)">
+              <path
+                fill="#FFDA44"
+                d="M14 28c7.732 0 14-6.268 14-14S21.732 0 14 0 0 6.268 0 14s6.268 14 14 14Z"
+              />
+              <path
+                fill="#338AF3"
+                d="M0 14C0 6.268 6.268 0 14 0s14 6.268 14 14"
+              />
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff" d="M0 0h28v28H0z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="./index.html" class="text-center">LearnLingo</a>
+      </div>
+
+      <div class="header-nav">
+        <nav>
+          <ul class="header-nav_list navigation_lit">
+            <li class="header-nav_item navigation_item">
+              <a class="header-nav_link navigation_link" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="header-nav_item navigation_item">
+              <a class="header-nav_link navigation_link" href="./teachers.html"
+                >Teachers</a
+              >
+            </li>
+            <li class="header-nav_item navigation_item favorites">
+              <a class="header-nav_link navigation_link" href="./favorites.html"
+                >Favorites</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-login">
+        <nav class="header-login-user">
+          <a href="#" id="logInLink" class="svg-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+            >
+              <path
+                stroke="#F4C550"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12.5 2.5h1c1.4 0 2.1 0 2.635.272a2.5 2.5 0 0 1 1.092 1.093C17.5 4.4 17.5 5.1 17.5 6.5v7c0 1.4 0 2.1-.273 2.635a2.5 2.5 0 0 1-1.092 1.092c-.535.273-1.235.273-2.635.273h-1M8.333 5.833 12.5 10m0 0-4.167 4.167M12.5 10h-10"
+              />
+            </svg>
+          </a>
+          <a href="#" id="logInButton" class="svg-icon">Log in</a>
+        </nav>
+        <div class="header-login-button">
+          <button class="button" id="registrationButton">Registration</button>
+        </div>
+        <!-- <a href="#" class="button">Registration</a> -->
+      </div>
+    </div>
+  </div>
+</header>
+
+    <section class="teachers">
+  <div class="container">
+    <div class="filters-container">
+      <div class="filters-row">
+        <div class="filters-list">
+          <p class="filters-text">Languages</p>
+          <div class="filters-lang">
+            <div class="select-wrapper">
+              <!-- <input type="text" name="filters-lang" id="" class="" placeholder=""> -->
+              <label for="languages">
+                <select name="languages" id="languages" class="studies">
+                  <option value="">French</option>
+                  <option value="">English</option>
+                  <option value="">German</option>
+                  <option value="">Ukrainian</option>
+                  <option value="">Polish</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="filters-list">
+          <p class="filters-text">Level of knowledge</p>
+          <div class="filters-level">
+            <div class="select-wrapper">
+              <select name="level" id="level" class="studies">
+                <option value="">A1 Beginner</option>
+                <option value="">A2 Elementary</option>
+                <option value="">B1 Intermediate</option>
+                <option value="">B2 Upper-Interme...</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="filters-list">
+          <p class="filters-text">Price</p>
+          <div class="filters-price">
+            <div class="select-wrapper"></div>
+            <select name="select-price" id="select-price" class="studies">
+              <option value="">30 $</option>
+              <option value="">10 $</option>
+              <option value="">20 $</option>
+              <option value="">40 $</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECTION TUTOR 1-->
+<section class="tutors-section">
+  <div class="container">
+    <div class="tutors">
+      <div class="tutors-box">
+        <div class="tutor-avatar" data-index="1"></div>
+      </div>
+
+      <ul class="tutor-list">
+        <li class="tutor-card" data-index="1">
+          <div class="tutor-data">
+            <div class="tutor-lang-name">
+              <p class="tutor-text">Languages</p>
+              <h2 class="tutor-name">Jane Smith</h2>
+            </div>
+            <div class="tutor-info">
+              <div class="tutor-item">
+                <img
+                  src="/learn-lingo-app/assets/book-open-4d45c5fa.svg"
+                  alt="book icon"
+                  width="16"
+                  height="16"
+                />
+                <h3 class="tutor-details">Lessons online</h3>
+                <img src="/learn-lingo-app/assets/VerticalLine-8275073a.svg" alt="vertical line" />
+                <div class="tutor-les">
+                  <div class="tutor-det">
+                    <h3 class="tutor-details">Lessons done: 1098</h3>
+                  </div>
+                </div>
+                <div class="tutor-star">
+                  <img
+                    src="/learn-lingo-app/assets/VerticalLine-8275073a.svg"
+                    alt="vertical line"
+                  />
+                  <img
+                    src="/learn-lingo-app/assets/star-54d6bb69.svg"
+                    alt="star icon"
+                    width="16"
+                    height="16"
+                  />
+                  <h3 class="tutor-details">Rating: 4.8</h3>
+                  <img
+                    src="/learn-lingo-app/assets/VerticalLine-8275073a.svg"
+                    alt="vertical line"
+                  />
+                </div>
+                <div class="tutor-price">
+                  <h3 class="tutor-details">
+                    Price / 1 hour: <span class="price">30$</span>
+                  </h3>
+                </div>
+
+                <div class="heart">
+                  <img
+                    src="/learn-lingo-app/assets/Vector-1e6b70f0.svg"
+                    alt="heart icon"
+                    width="26"
+                    height="26"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tutor-rating"></div>
+
+          <div class="tutor-description">
+            <div class="">
+              <div class="tutor-row">
+                <p class="tutor-text">Speaks:</p>
+                <div class="tutor-decor">
+                  <h3 class="tutor-details">German, French</h3>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="tutor-lesson">
+                <p class="tutor-text">Lesson Info:</p>
+                <h3 class="tutor-details">
+                  Lessons are structured to cover grammar, vocabulary, and
+                  practical usage of the language.
+                </h3>
+              </div>
+            </div>
+
+            <div class="tutor-conditions">
+              <p class="tutor-text">Conditions:</p>
+              <h3 class="tutor-details">
+                Welcomes both adult learners and teenagers (13 years and above).
+                Provides personalized study plans
+              </h3>
+            </div>
+          </div>
+
+          <!-- READ_MORE	-->
+
+          <div class="tutor-read" data-index="1">
+            <span class="read-more-btn" id="readMoreBtn1"></span>
+            <a href="#" class="read-more-btn">Read more</a>
+          </div>
+
+          <div class="tutor-read">
+            <div class="tutor-readmore" id="readMoreSection1">
+              <p>
+                <span class="read-more-text">
+                  Jane is an experienced and dedicated language teacher
+                  specializing in German and French. She holds a Bachelor's
+                  degree in German Studies and a Master's degree in French
+                  Literature. Her passion for languages and teaching has driven
+                  her to become a highly proficient and knowledgeable
+                  instructor. With over 10 years of teaching experience, Jane
+                  has helped numerous students of various backgrounds and
+                  proficiency levels achieve their language learning goals. She
+                  is skilled at adapting her teaching methods to suit the needs
+                  and learning styles of her students, ensuring that they feel
+                  supported and motivated throughout their language
+                  journey.</span
+                >
+              </p>
+
+              <div class="tutor-response">
+                <div class="tutor-info-small">
+                  <div class="tutors-box-resp">
+                    <div class="tutor-avatar-small">
+                      <img
+                        src="data:image/jpeg;base64,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"
+                        alt="photo of Frank"
+                      />
+                    </div>
+                    <div class="tutor-data-small">
+                      <p class="tutor-text">Frank</p>
+                      <div class="tutor-info-sm">
+                        <div class="tutor-star">
+                          <img
+                            src="/learn-lingo-app/assets/star-54d6bb69.svg"
+                            alt="star icon"
+                            width="16"
+                            height="16"
+                          />
+                          <h4 class="tutor-details-rating">4.0</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tutor-desc-small">
+                    <p class="tutor-resp">
+                      Jane's lessons were very helpful. I made good progress.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tutor-info-small">
+                  <div class="tutors-box-resp">
+                    <div class="tutor-avatar-small">
+                      <img
+                        src="/learn-lingo-app/assets/Eve-cd7acc28.jpg"
+                        alt="photo of Eve"
+                      />
+                    </div>
+                    <div class="tutor-data-small">
+                      <p class="tutor-text">Eve</p>
+                      <div class="tutor-info-sm">
+                        <div class="tutor-star">
+                          <img
+                            src="/learn-lingo-app/assets/star-54d6bb69.svg"
+                            alt="star icon"
+                            width="16"
+                            height="16"
+                          />
+                          <h4 class="tutor-details-rating">5.0</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tutor-desc-small">
+                    <p class="tutor-resp">
+                      Jane is an amazing teacher! She is patient and supportive.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tutor-tags">
+            <ul class="tutor-tags-info">
+              <li class="tutor-tags-row">
+                <button type="button" class="tutor-btn">#A1 Beginner</button>
+                <button type="button" class="tutor-btn">#A2 Elementary</button>
+                <button type="button" class="tutor-btn">
+                  #B1 Intermediate
+                </button>
+                <button type="button" class="tutor-btn">
+                  #B2 Upper-Intermediate
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <span class="">
+            <div class="button-trial-lesson">
+              <button type="submit" class="book-button" data-modal-open>
+                Book trial lesson
+              </button>
+            </div>
+          </span>
+          <!-- /READ_MORE	-->
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- /SECTION TUTOR 1 -->
+
+    <!-- MODAL-book-lesson	-->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-close-btn" data-modal-close>
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+      >
+        <title>x</title>
+        <path
+          fill="none"
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          stroke-miterlimit="4"
+          stroke-width="2.5"
+          stroke="#000"
+          d="M24 8l-16 16M8 8l16 16"
+        ></path>
+      </svg>
+    </button>
+    <h2 class="modal-title js-book-btn">Book trial lesson</h2>
+    <p class="modal-text">
+      Our experienced tutor will assess your current language level, discuss
+      your learning goals, and tailor the lesson to your specific needs.
+    </p>
+
+    <div class="modal-book">
+      <div class="modal-lesson-wrapper">
+        <div class="modal-book-wrapper">
+          <div class="modal-book-avatar">
+            <img src="../../assets/img/pictures/1.jpg" alt="photo of tutor" />
+          </div>
+          <div class="modal-book-data">
+            <p class="modal-book-text">Your teacher</p>
+            <div class="">
+              <h4 class="modal-book-name">Jane Smith</h4>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h3 class="modal-book-desc">
+            What is your main reason for learning English?
+          </h3>
+        </div>
+
+        <div class="modal-form-radio-btn">
+          <label class="radio-btn">
+            <input type="radio" name="reason" value="career" />
+            Career and business
+          </label>
+          <label>
+            <input type="radio" name="reason" value="kids" checked />
+            Lesson for kids
+          </label>
+          <label>
+            <input type="radio" name="reason" value="abroad" />
+            Living abroad
+          </label>
+          <label>
+            <input type="radio" name="reason" value="exams" />
+            Exams and coursework
+          </label>
+          <label>
+            <input type="radio" name="reason" value="culture" />
+            Culture, travel or hobby
+          </label>
+        </div>
+      </div>
+
+      <form class="modal-form form" id="js-bookForm">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-input"
+            placeholder="Full Name"
+            name="fullname"
+            required
+            pattern="[a-zA-Zа-яА-Я]+"
+            maxlength="20"
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="email"
+            id="email"
+            class="form-input"
+            placeholder="Email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="tel"
+            class="form-input"
+            placeholder="Phone number"
+            name="phone"
+          />
+        </div>
+      </form>
+
+      <div>
+        <button type="submit" class="form-btn">Book</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /MODAL-book-lesson -->
+
+
+    
+    
+    
+    
+    
+  </body>
+</html>
